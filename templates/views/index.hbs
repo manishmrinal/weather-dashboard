@@ -5,33 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     </head>
 <body>
     {{>header}}
-
+    <div class="sec1">
     <p>
-
-         This site gives you weather of a location
+         Hello there have a great day!! Here you can check out weather of any place on earth :)
     </p>
+    </div>
+    <div class="sec2">
     <form >
-    
-   ENter a city: <input type="text" name="address" placeholder="location"/>
-    <button type="submit" >Fetch Details</button>
+    <input type="text" name="address" placeholder="Enter location"/>
+    <button type="submit" >Get Details</button>
     
     </form>
+    </div>
 
-    <p id="msg1">
+    <div class="sec3">
 
-    </p>
+    <p id="msg1"></p>
 
-    <p id="msg2">
+    <p id="msg2"></p>
 
-
-    </p>
+    <p id="msg3"></p>
+    </div>
     
+
     {{>footer}}
  <script src="/client-js/client-app.js"></script>
 
 </body>
 </html>
+
+
+
