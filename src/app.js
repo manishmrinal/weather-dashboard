@@ -15,6 +15,7 @@ console.log(__filename)
 //console.log(path.join(__dirname, '../public/'))
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //app.com
 //app.com/help
@@ -115,7 +116,7 @@ app.get('*', (req, res) => {
     })
 })
 //port
-app.listen(3000,()=>{
+app.listen(port,()=>{
 
     console.log('server is up')
 })
